@@ -24,7 +24,7 @@ hbs.registerHelper('getCurrentYear',()=>{
 });
 app.get('/',(req,res)=>{
   res.render('home.hbs',{
-    pussyname:'Pooja',
+    name:'Visitor',
     // year:new Date().getFullYear()
   });
 });
@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
 
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
-    pussyname:'Pooja',
+    name:'Visitor',
     // year:new Date().getFullYear()
   });
 });
